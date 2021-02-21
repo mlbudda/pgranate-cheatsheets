@@ -2,11 +2,25 @@
 
 Compact &amp; Comprehensive cheat sheets for Developers, who value their screen space.
 
+(Super early version, updated everyday)
+
 ## Python 3
 
-### Built-in functions
-
 ### Strings
+
+```python
+# f-string
+print(f'1, {1+1}, {3:.2f}')
+print(f'grouping:{1000000:,.2f}')
+print(f'binary:{20:b}, octal:{20:o}')
+print(f'hexadecimal:{20:x}')
+print(f'scientific notation:{345600000000:e}')
+print(f'precentage:{0.25:.0%}')
+print(f'{"Width":10}|<--To here')
+print(f'{"align-right":->20}')
+print(f'{"align-left":-<20}')
+print(f'{"align-center":-^20}')
+```
 
 ### Lists
 
@@ -27,6 +41,8 @@ Compact &amp; Comprehensive cheat sheets for Developers, who value their screen 
 ###
 
 ### Files
+
+### Built-in functions
 
 ### Summary coding conventions pep-0008
 
