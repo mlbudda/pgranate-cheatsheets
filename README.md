@@ -24,6 +24,43 @@ print(f'{"align-center":-^20}')
 
 ### Lists
 
+```python
+# Basics
+# ['lists', 'are', '0-indexed']
+# [   0   ,   1  ,       2    ]
+print(['Print', 'second'][1])
+sample_list = ['one', 'two', 'three', 4, 'five']
+sample_list[1] = 2 #  assign new value
+sample_list.insert(1, [1.50, 1.25, 1.75])
+sample_list.append(6) #  adds to the end
+sample_list.index('one') #  returns an index
+sample_list.count('two') #  1 occurence of 'two
+new_list = ['seven', 'eight']
+sample_list.extend(new_list) #  merge two lists
+sample_list.remove('eight')
+sample_list.pop(7) #  removes at index or last
+del sample_list[6] #  removes at given index
+cc_sample_list = sample_list.copy() #  copy list
+
+# Access each list items
+for i in sample_list:
+    print(i) #  prints each item
+this_list = [1, 2, 3, 4, 5]
+```
+
+```python
+# use list comprehensions
+print([i for i in range(1, 6)]) #  [1, 2, 3, 4, 5]
+```
+
+```python
+# Sorting
+sample_list[1].sort() #  [1.25, 1.50, 1.75]
+sample_list[1].sort(reverse=True) #  [1.75, 1.5, 1.25]
+sample_list[1].reverse() #  [1.75, 1.5, 1.25]
+print(sample_list[1])
+```
+
 ### Dictionaries
 
 ### Tuples
