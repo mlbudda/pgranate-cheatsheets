@@ -1,6 +1,6 @@
 # pgranate-cheatsheets
 
-Compact &amp; Comprehensive cheat sheets for Developers, who value their screen space.
+Compact &amp; Comprehensive cheat sheets for Developers, who value their screen space. Usage: one scenario is to dock it to the left/right as in this [screenshot](usage.png). Use Control+F, or Command+F for search.
 
 (Super early version, updated everyday)
 
@@ -42,7 +42,7 @@ sample_list.pop(7) #  removes at index or last
 del sample_list[6] #  removes at given index
 cc_sample_list = sample_list.copy() #  copy list
 
-# Access each list items
+# Access each item in the list
 for i in sample_list:
     print(i) #  prints each item
 this_list = [1, 2, 3, 4, 5]
@@ -62,6 +62,43 @@ print(sample_list[1])
 ```
 
 ### Dictionaries
+
+```python
+# Basics
+# {'3.7>': 'are dictionaries ordered', 'Unique': 'Keys'}
+smpl_dict = {'a':1, 'b':2, 'c':3, 'd':1}
+print(smpl_dict['a']) #  1
+print(smpl_dict.keys()) #  dict_keys(['a', 'b', 'c', 'd'])
+print(smpl_dict.values()) #  dict_values([1, 2, 3, 1])
+smpl_dict['d'] = 4 #  assign new value
+print(smpl_dict.items()) #  returns as tuple
+another_dict = {'d':5, 'e':6}
+smpl_dict.update(another_dict) #  updates & adds
+smpl_dict.pop('e') #  removes a specified item
+del smpl_dict['a'] #  also removes a specified item
+new_dict = dict(another_dict) #  make a copy of the dict
+```
+
+```python
+# Create dictionary from keys and remove duplictes
+duplicate_keys = [1,1,1,1,2]
+remove_duplicates = dict.fromkeys(duplicate_keys, 0)
+# remove_duplicates = {1: 0, 2: 0}
+```
+
+```python
+if 'b' in smpl_dict: #  check if key exsists
+    print(f'\'b\' = {smpl_dict["b"]}') #  'b' = 2
+
+for i in smpl_dict: #  loop through keys
+    print(i) #  b
+
+for i in smpl_dict: #  loop through values
+    print(smpl_dict[i]) #  2
+
+for i,j in smpl_dict.items(): #  loop through both
+    print(i, j) #  b 2
+```
 
 ### Tuples
 
