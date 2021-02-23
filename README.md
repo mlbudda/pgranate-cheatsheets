@@ -9,6 +9,54 @@ Compact &amp; Comprehensive cheat sheets for Developers, who value their screen 
 ### Strings
 
 ```python
+# Basics
+# Python strings are immutable,
+# you change them by making a copy
+s = 'change --> ! <--'
+s_new = s[:11] + 'ok' + s[12:]
+print(s_new) #  change --> ok <--
+
+print('012345'[2:4]) #  23
+print('012345'[::-1]) #  543210
+print('Hello'.upper()) #  HELLO
+print('Hello'.lower()) #  hello
+print('abc'.capitalize()) # Abc
+print('abc'.title()) # Abc
+print('AB --> FF'.replace('AB', "FF"))
+print(' <--Remove-space'.strip())
+print('Split here-->, OK'.split(','))
+print('-'.join('abc')) #  a-b-c
+```
+
+```python
+# String Validators
+'abc123'.isalnum() == True #  (a-z, A-Z and 0-9)
+'abc123!'.isalnum() == False
+
+'abc'.isalpha() == True # (a-z and A-Z)
+'abc123'.isalpha() == False
+
+'123'.isdigit() == True # (0-9)
+'123abc'.isalpha() == False
+
+'ab12!$'.islower() == True #  (a-z)
+'Ab12!$'.islower() == False
+
+'AB12!$'.islower() == True #  (A-Z)
+'Ab12!$'.islower() == False
+```
+
+```python
+# Escape characters
+print('Escape \'qoutes\'!')
+print('Escape\\Backslash')
+print('line1-->\n<--line2')
+print('Tab-->\t------')
+print('Octal value --> \123')
+print('Hex value --> \x48')
+```
+
+```python
 # f-string
 print(f'1, {1+1}, {3:.2f}')
 print(f'grouping:{1000000:,.2f}')
