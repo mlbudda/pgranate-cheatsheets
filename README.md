@@ -152,6 +152,61 @@ for i,j in smpl_dict.items(): #  loop through both
 
 ### Sets
 
+```python
+# Basics
+# Unordered. Duplicates Not Allowed. Unchangeable.
+first = set() #  creates new set or {1,2,3} but NOT {}
+first.add('a')
+secnd = {'b','c'}
+first.update(secnd) #   {'b', 'a', 'c'}
+```
+
+```python
+# Items can be removed two ways:
+first.remove('e') #  raises a KeyError (if e is none)
+first.discard('e') #  DOESN'T raise an error
+```
+
+```python
+# Combine two sets
+third = first.union(secnd) # or first | secnd
+# Can be accessed only with a loop.
+for i in first:
+    print(i, end=" ") #  b a c
+print('a' in first) #  True
+```
+
+```python
+# Creates new set with redundant values - {3, 'a'}
+rs = {1,2,3,'a'}.intersection({'a',3,4,5}) #  or A & B
+# Updates exsisting set with redundant values
+rs.intersection_update({1,2,3}) #  {3}
+```
+
+```python
+# Creates new set with unique values from both sets - {1, 4}
+us = {1,2,3}.symmetric_difference({2,3,4}) #  or A ^ B
+# Updates existing set with unique values
+us.symmetric_difference_update({'a',1}) #  {4, 'a'}
+```
+
+```python
+# Creates a difference between two sets - {1, 2}
+ds = {1,2,3}.difference({3,4}) #  or A - B
+# Updates existing with a difference
+ds.difference_update({2,3}) #  {1}
+```
+
+```python
+# Returns True if all items are the same in both sets
+sub_s = {1,2,3}.issubset({2,1,3}) #  True
+```
+
+```python
+# Returns True if some items are the same in first set
+sup_s = {1,2,3,4,5}.issuperset({2,1,3}) #  True
+```
+
 ### Loops
 
 ### Conditional
