@@ -150,6 +150,40 @@ for i,j in smpl_dict.items(): #  loop through both
 
 ### Tuples
 
+```python
+# Basics
+# Ordered. Unchangeable. Allow Duplicates
+first_t = ('a', 'b', 'c', 1, 'd', 12)
+one_tuple = ("a",) #  use comma to create one element
+convert = tuple(('a', 'b')) #  ! double round-brackets
+print(first_t[1]) #  b
+if 'a' in first_t: print('True') #  finds value
+
+# If you need to change tuple
+x = list(first_t) #  Convert to list
+x[0] = '1' #  Assign the value
+z = tuple(x) #  Convert back to tuple
+
+# Unpacking
+(a,s,d) = ('one', 'two', 'three') #  one two three
+
+# Assign rest of the values using Asterisk*
+(a,*s) = ('one', 'two', 'three') #  one ['two', 'three']
+
+# Access using loop:
+for i in first_t:
+    print(i, end=' ') #  a b c 1 d 12
+
+# Join two tuples
+third_t = convert + one_tuple #  ('a', 'b', 'a')
+
+# Count elemets
+print(third_t.count('a')) #  2
+
+# Index (raises an exception if the value is not found)
+print(third_t.index('b')) #  1
+```
+
 ### Sets
 
 ```python
