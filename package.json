@@ -1,0 +1,26 @@
+{
+  "name": "pgranate-cheatsheets",
+  "version": "1.0.0",
+  "description": "Compact &amp; Comprehensive cheat sheets for Developers, who value their screen space. Usage: one scenario is to dock it to the left/right as in this [screenshot](usage.png). Use Control+F, or Command+F for search.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlbudda/pgranate-cheatsheets.git"
+  },
+  "author": "Ignas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlbudda/pgranate-cheatsheets/issues"
+  },
+  "homepage": "https://github.com/mlbudda/pgranate-cheatsheets#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "highlight.js": "^10.6.0"
+  }
+}
