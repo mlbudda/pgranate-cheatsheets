@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.code-block {
+  /* min-width: 450px; */
+  flex-basis: 430px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  /* flex-shrink: 3; */
+  /* width: 450px;
+  height: 300px; */
+}
+
+.code-block-tag {
+  color: rgb(112, 75, 112);
+  /* text-align: center; */
+  margin: 0;
+  padding-left: 150px;
+  font-size: 16px;
+}
+
+pre {
+  margin: 0;
+}
