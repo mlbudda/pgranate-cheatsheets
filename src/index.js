@@ -18,7 +18,11 @@ print('abc'.title()) # Abc
 print('AB --> FF'.replace('AB', "FF"))
 print(' <--Remove-space'.strip())
 print('Split here-->, OK'.split(','))
-print('-'.join('abc')) #  a-b-c`,
+print('-'.join('abc')) #  a-b-c
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 2,
@@ -37,7 +41,13 @@ print('-'.join('abc')) #  a-b-c`,
 'Ab12!$'.islower() == False
 
 'AB12!$'.islower() == True #  (A-Z)
-'Ab12!$'.islower() == False`,
+'Ab12!$'.islower() == False
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 3,
@@ -52,7 +62,17 @@ print(f'precentage:{0.25:.0%}')
 print(f'{"Width":10}|<--To here')
 print(f'{"align-right":->20}')
 print(f'{"align-left":-<20}')
-print(f'{"align-center":-^20}')`,
+print(f'{"align-center":-^20}')
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 4,
@@ -88,7 +108,21 @@ print([i for i in range(1, 6)]) #  [1, 2, 3, 4, 5]
 sample_list[1].sort() #  [1.25, 1.50, 1.75]
 sample_list[1].sort(reverse=True) #  [1.75, 1.5, 1.25]
 sample_list[1].reverse() #  [1.75, 1.5, 1.25]
-print(sample_list[1])`,
+print(sample_list[1])
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 6,
@@ -105,7 +139,15 @@ another_dict = {'d':5, 'e':6}
 smpl_dict.update(another_dict) #  updates & adds
 smpl_dict.pop('e') #  removes a specified item
 del smpl_dict['a'] #  also removes a specified item
-new_dict = dict(another_dict) #  make a copy of the dict`,
+new_dict = dict(another_dict) #  make a copy of the dict
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 7,
@@ -124,7 +166,13 @@ for i in smpl_dict: #  loop through values
 print(smpl_dict[i]) #  2
 
 for i,j in smpl_dict.items(): #  loop through both
-print(i, j) #  b 2`,
+print(i, j) #  b 2
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 8,
@@ -146,7 +194,10 @@ z = tuple(x) #  Convert back to tuple
 (a,s,d) = ('one', 'two', 'three') #  one two three
 
 # Assign rest of the values using Asterisk*
-(a,*s) = ('one', 'two', 'three') #  one ['two', 'three']`,
+(a,*s) = ('one', 'two', 'three') #  one ['two', 'three']
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 9,
@@ -162,7 +213,16 @@ third_t = convert + one_tuple #  ('a', 'b', 'a')
 print(third_t.count('a')) #  2
 
 # Index (raises an exception if the value is not found)
-print(third_t.index('b')) #  1`,
+print(third_t.index('b')) #  1
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 10,
@@ -185,12 +245,14 @@ print('a' in first) #  True
 # Creates new set with redundant values - {3, 'a'}
 rs = {1,2,3,'a'}.intersection({'a',3,4,5}) #  or A & B
 # Updates exsisting set with redundant values
-rs.intersection_update({1,2,3}) #  {3}`,
+rs.intersection_update({1,2,3}) #  {3}
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 11,
     tags: "Sets",
-    code_block: `# Creates new set with unique values from both sets - {1, 4}
+    code_block: `# New set with unique values from both sets - {1, 4}
 us = {1,2,3}.symmetric_difference({2,3,4}) #  or A ^ B
 # Updates existing set with unique values
 us.symmetric_difference_update({'a',1}) #  {4, 'a'}
@@ -201,7 +263,16 @@ ds.difference_update({2,3}) #  {1}
 # Returns True if all items are the same in both sets
 sub_s = {1,2,3}.issubset({2,1,3}) #  True
 # Returns True if some items are the same in first set
-sup_s = {1,2,3,4,5}.issuperset({2,1,3}) #  True`,
+sup_s = {1,2,3,4,5}.issuperset({2,1,3}) #  True
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 12,
@@ -214,17 +285,19 @@ SAMPLE_CONSTANT = 1
 class MyClass: ...
 # multiply_number.py
 
-def long_function_name(
-        var_1, var_2, var_3=1, # no space arround =
-        var_4):  # Add extra 4-spaces to distinguish level below
-    """One-line Docstrings. Explaining what this f-tion does"""
-    return var_1
+def lg_fnc_n(
+      var_1, var_2, var_3=1, # no space arround =
+      var_4):  # Add 4-spaces to distinguish level below
+  """One-line Docstrings. What this f-tion does"""
+  return var_1
 
 for i in string:
     print(i)  # 4-space identation.
 
-foo = long_function_name(var_one, var_two,     # Aligned with opening
-                          var_three, var_four)  # for vertical alignment.`,
+foo = lg_fnc_n(var_1, var_2,     # Aligned with opening
+                var_3, var_4)  # for vertical alignment.
+# ---------------------------------
+# ---------------------------------`,
   },
   {
     id: 13,
@@ -239,8 +312,8 @@ result = some_function(
     4, 5, 6
 )  # Lined up with the first character
 # Backslashes with long, multiple with-statements.
-with open('/path/to/some/file/read') as file_1, \
-      open('/path/to/some/file/write', 'w') as file_2:
+with open('/f/read') as file_1, \\
+    open('f/write', 'w') as file_2:
     file_2.write(file_1.read())
 # Easy to match operators with operands
 result = (salary
@@ -248,7 +321,8 @@ result = (salary
           + bonus_staff,
           + (dividends - qualified_dividends),
           - ira
-          - loan_interest)`,
+          - loan_interest)
+# ---------------------------------`,
   },
 ];
 
@@ -259,9 +333,10 @@ const wrapper = document.querySelector(".wrapper");
 window.addEventListener("DOMContentLoaded", () => {
   let displayCode = codeBlocks.map((item) => {
     // return `<p>123</p>`;
-    return `<div class="code-block"><pre><code class="python">${item.code_block}</code></pre></div>`;
+    return `
+    <div class="code-block"><h1 class="code-block-tag">${item.tags}</h1><pre><code class="python">${item.code_block}</code></pre></div>`;
   });
   displayCode = displayCode.join("");
-  console.log(displayCode);
+  // console.log(displayCode);
   wrapper.innerHTML = displayCode;
 });
