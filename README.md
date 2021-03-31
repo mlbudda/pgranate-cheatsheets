@@ -343,13 +343,88 @@ while i != len(s):
 # 0:a 1:b 2:c
 ```
 
-### Exceptions
+### Built-in exceptions
 
 ### Class
 
 ### Files
 
 ### Built-in functions
+
+```python
+# Abs(number) return absolute value
+abs(-10) #  10
+abs(10) #  10
+
+# Enumerate(iter, [start number]) object
+x = enumerate(['a', 'b', 'c'])
+list(x) #  [(0, 'a'), (1, 'b'), (2, 'c')]
+
+# Filter(func, iter) tests each iterable True or not
+def less_than_zero(a):
+    return a < 0
+x = filter(less_than_zero, [1, 2, -1, -3])
+list(x) #  [-1, -3]
+
+# Len(object) returns the length of an object
+len('abcd') #  4
+
+# Map(func, iter) returns an iterable to every item
+def add(arg):
+    return arg + 'xyz'
+x = map(add, ['a', 'b', 'c'])
+list(x) #  ['axyz', 'bxyz', 'cxyz']
+```
+
+```python
+# Max(iter, [key]), Min(n1,n2.., [key])
+# Returns largest/smallest number in a given sequence
+max([1, 2, 33, 44]) #  44
+max('a', 'ab', 'abc', key = len) #  abc
+min([1, 2, 33, 44]) #  1
+
+# Range([start], stop, [step]) creates a sequence
+list(range(5)) #  [0, 1, 2, 3, 4]
+list(range(0, 10, 3)) #  [0, 3, 6, 9]
+list(range(0, -5, -1)) #  [0, -1, -2, -3, -4]
+
+# Reversed(sequence) returns reversed iterator
+list(reversed('abc')) #  ['c', 'b', 'a']
+
+# Sum(iter, [start]) returns sum of all items
+sum([2, 2, 2]) #  6
+sum([2, 2, 2], 6) #  12
+
+# Zip(list1, list2, [list3...]) combines two lists
+list(zip(['a', 'b'], [1, 2])) #  [('a', 1), ('b', 2)]
+
+type(123) #  <class 'int'>
+```
+
+```python
+# Sorted(iter, [key], [reverse])
+# builds a new sorted list from an iterable
+print(sorted(['b', 'a', 'c'])) #  ['a', 'b', 'c']
+
+# Sort by dictionary values
+x = {'a': 2, 'b': 1, 'c': 3}
+x_result = sorted(x.items(), key=lambda a: a[1])
+print(x_result) #  [('b', 1), ('a', 2), ('c', 3)]
+
+# Sort by dictionary values (Output values)
+sorted({'a': 2, 'b': 1, 'c': 3}.values()) #  [1, 2, 3]
+
+# Sort by remainder 3
+sorted([4, 3, 2], key=lambda a : a % 3) #  [3, 4, 2]
+
+# Sort by length
+sorted(['aaa', 'a', 'a'], key=len) # ['a', 'a', 'aaa']
+
+# Sort by last letter
+def fnc(a):
+    return a[-1]
+sorted(['sb', 'fa', 'xc'], key=fnc) # ['fa', 'sb', 'xc']
+```
 
 ### Summary coding conventions pep-0008
 
