@@ -417,6 +417,32 @@ sorted(['sb', 'fa', 'xc'], key=fnc) # ['fa', 'sb', 'xc']`,
   },
   {
     id: 17,
+    tags: "Class",
+    code_block: `# Bundle data and functionality together
+class ClassName:
+    '''Most basic example of class'''
+    pass
+# Creates a new instance and assigns to a variable:
+a = ClassName()
+print(a.__doc__) #  A simple example class
+
+class Person:
+    ''' Basic example including init and method '''
+    def __init__(self, name, height):
+        print(f'We are initializing class...')
+        self.name = name
+        self.height = height
+    age = 0
+    def say_hello(self):
+        return f'Hello {self.name}'
+
+x = Person('John', 185) #  We are initializing class...
+x.age = 34 #  set age to 34
+print(x.say_hello()) #  Hello John
+vars(x) #  {'name': 'John', 'height': 185, 'age': 34}`,
+  },
+  {
+    id: 18,
     tags: "Naming Convention",
     code_block: `# Style Guide for Python Code - PEP 8
 # Limit all lines to a maximum of 79 characters
@@ -442,7 +468,7 @@ foo = lg_fnc_n(var_1, var_2,
                 var_3, var_4)`,
   },
   {
-    id: 18,
+    id: 19,
     tags: "Naming Convention",
     code_block: `# Space between operand (=+) and operator (i) 
 i = i + 1

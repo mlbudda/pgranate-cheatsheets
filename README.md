@@ -343,9 +343,32 @@ while i != len(s):
 # 0:a 1:b 2:c
 ```
 
-### Built-in exceptions
-
 ### Class
+
+```python
+# Bundle data and functionality together
+class ClassName:
+    '''Most basic example of class'''
+    pass
+# Creates a new instance and assigns to a variable:
+a = ClassName()
+print(a.__doc__) #  A simple example class
+
+class Person:
+    ''' Basic example including init and method '''
+    def __init__(self, name, height):
+        print(f'We are initializing class...')
+        self.name = name
+        self.height = height
+    age = 0
+    def say_hello(self):
+        return f'Hello {self.name}'
+
+x = Person('John', 185) #  We are initializing class...
+x.age = 34 #  set age to 34
+print(x.say_hello()) #  Hello John
+vars(x) #  {'name': 'John', 'height': 185, 'age': 34}
+```
 
 ### Files
 
